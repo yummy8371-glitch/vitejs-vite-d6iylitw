@@ -1,0 +1,17 @@
+/* 画面全体のスクロール防止とSVGの巨大化防止 */
+html,
+body,
+#root {
+height: 100%;
+width: 100%;
+margin: 0;
+padding: 0;
+overflow: hidden;
+-webkit-tap-highlight-color: transparent;
+}
+
+/* Tailwind未適用時でもSVGが画面を突き破らないよう安全策を設定 */
+svg {
+max-width: 100%;
+max-height: 100%;
+}
